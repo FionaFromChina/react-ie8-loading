@@ -1,0 +1,59 @@
+body {
+  background-color:#fff;
+}
+.sample-list {
+  padding: 200px;
+  width: 200px;
+  background-color:#e0e0e0;
+}
+
+.c-loading {
+  position: relative;
+}
+
+.c-loading-animated {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+  .c-pic-module {
+    max-width: 64px;
+    margin-left: -32px;
+    margin-top: -32px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    //transform: translate(-50%, -50%);
+  }
+  img {
+    width: 100%;
+    animation: animationRotate 1s linear infinite;
+  }
+}
+
+@keyframes animationRotate {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.test-bottom {
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: 9999;
+}
+.test-bottom-1 {
+  left: 0;
+}
+.test-bottom-2 {
+  left: 100px;
+}
